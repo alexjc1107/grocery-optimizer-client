@@ -2,4 +2,11 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: HqrenYjodoxXnC13HVl6BPg6JYWAkIsUiATnYoF1Ki//1qofueqlbEKLEZGMldo4yvmjoSiWD0aDmWcCDFgV0A0vd0cynUSHIfhVjTxi/85c11eHZVkTOHk+OeyEIcfMAsFVxuuaK7k5Xm1KB1x72YyjBBVVUnbK31fqEabKJ/5t6IUn8R3d4NMc9v3QsFms+apPb7MKeXhVYbJ0+3zbVqZFlb8+xaOB4rMd97MtPN+c3iKZziqm4iXVj6r+A3rso8FqnPNQ+I0k/vDzqHGMNeQ3UD3WzHW6UmnLIL8o4NkgJjbtYakC+57APo2LJg3hfjp2FPGcCpFrR5L6F+poHtoOxQcGoK1Xkzl93EGfWzCwHq5MJxR0D6fbwCs9rJ6N8ncumOcotSAY20++7WSeJxRmM82kMg2DhM4+S8qIEOouoAPqZKvCyPqaQgelXKssgq5gsT3k1ryblSPSLtLYHX9ZiOMpC/k/gh/TqyJAfOxJMWt9cP5LNjOub4EeqGH7xsr9lRVl+zZvW+kj13NKg/8r1aG3Ytp475dSuoeMK5mPJj4P92skX5VWbXckw4Ln851hLMWNhwgVS8xYS28holQhoPD5JEiX8sNt/sIH9FQ6Qih1v8cQlQYzbYMvZBiU9lWPByEZ9AndAZ90xei4LYQPgKsNW8yAmWS/C3b//yw=
+  app: desolate-woodland-47656
+  on:
+    repo: alexjc1107/grocery-optimizer-client
