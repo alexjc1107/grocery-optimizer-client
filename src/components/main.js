@@ -1,14 +1,17 @@
 import React, { Component } from "react";
-import "./main.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import App from "./App";
+import Home from "./home";
 
 class Main extends Component {
   render() {
     return (
-      <div className="Main">
-        <header>
-          <p>New main page</p>
-        </header>
-      </div>
+      <Router>
+        <div>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/app" component={App} />
+        </div>
+      </Router>
     );
   }
 }
