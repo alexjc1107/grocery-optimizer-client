@@ -1,19 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { shallow, mount } from "enzyme";
-import App from "./App";
+import Main from "./main";
 import "../setupTest";
 
-describe("<App />", () => {
+describe("<Main />", () => {
   it("Renders without crashing", () => {
-    shallow(<App />);
+    shallow(<Main />);
   });
 });
 
 describe("<App />", () => {
   it("Smoke test", () => {
     const testVar = "Hello";
-    shallow(<App />);
+    shallow(<Main />);
     expect(testVar).toEqual("Hello");
   });
 });
